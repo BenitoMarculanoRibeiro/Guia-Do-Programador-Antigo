@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: rgb(29, 29, 29);
+}
+
+.cabecalho {
+    background-color: rgb(41, 40, 40);
+    height: 100px;
+    line-height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.loja {
+    background-color: rgb(41, 40, 40);
+    position: static;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: unset;
+}
+
+.produto {
+    width: 33%;
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+.coluna-20:nth-child(1) {
+    width: 20%;
+    background: linear-gradient(45deg, aqua, rgb(190, 253, 253));
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+.coluna-20:nth-child(2) {
+    width: 20%;
+    background: linear-gradient(45deg, rgb(190, 253, 253), aqua);
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+.coluna-20:nth-child(3) {
+    width: 20%;
+    background: linear-gradient(45deg, aqua, rgb(190, 253, 253));
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+.coluna-20:nth-child(4) {
+    width: 20%;
+    background: linear-gradient(45deg, rgb(190, 253, 253), aqua);
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+.coluna-20:nth-child(5) {
+    width: 20%;
+    background: linear-gradient(45deg, aqua, rgb(190, 253, 253));
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+.coluna-20:hover:nth-child(1) {
+    width: 20%;
+    background: linear-gradient(45deg, #E0235C, #e292aa);
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+.coluna-20:hover:nth-child(2) {
+    width: 20%;
+    background: linear-gradient(45deg, #e292aa, #E0235C);
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+.coluna-20:hover:nth-child(3) {
+    width: 20%;
+    background: linear-gradient(45deg, #E0235C, #e292aa);
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+.coluna-20:hover:nth-child(4) {
+    width: 20%;
+    background: linear-gradient(45deg, #e292aa, #E0235C);
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+.coluna-20:hover:nth-child(5) {
+    width: 20%;
+    background: linear-gradient(45deg, #E0235C, #e292aa);
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+}
+
+table {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+table tr {
+    border: 1px solid black;
+}
