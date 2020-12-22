@@ -52,7 +52,6 @@ $produto = new Produto;
         </table>
     </div>
     <div id="loja">
-
         <table>
             <td>
                 <table id="setProdutos" style="margin: 0 auto; width: 50%; background-color: #F63C3C;" class="displayed">
@@ -70,9 +69,15 @@ $produto = new Produto;
             <hr width="2" size="100" style="background-color: red;">
             <td>
                 <table id="carrinho" style="margin: 0 auto; width: 50%; background-color: #F63C3C;" class="displayed">
-
+                    <?php $produto->criarTabela(); ?>
                 </table>
             </td>
+            <div class="popup-modal shadow" data-popup-modal="two">
+                <i class="fas fa-2x fa-times text-white bg-primary p-3 popup-modal__close"></i>
+                <h1 class="font-weight-bold">
+                    Modal Two Title
+                </h1>
+            </div>
         </table>
     </div>
 </body>

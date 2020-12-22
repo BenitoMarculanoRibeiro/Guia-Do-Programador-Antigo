@@ -102,13 +102,15 @@ class Produto
             die(mysqli_error($sql));
         }
         while ($linha = mysqli_fetch_assoc($sql)) {
+            echo($linha['id']);
             echo '
                 <tr>
+                    
                         <td><img id="foto" name="foto" src="' . $linha['foto'] . '" value="' . $linha['foto'] . '" class="" style="Width: 100px!important; Height: 100px!important; margin-top: 2px;"></td>
                         <td><span id="nome" name="nome" value="' . $linha['nome'] . '" class="' . $linha['nome'] . '" brand-text font-weight-light">' . $linha['nome'] . '</span></td>
                         <td><span id="descricao" descricao="nome" value="' . $linha['descricao'] . '" class="' . $linha['descricao'] . '" brand-text font-weight-light">' . $linha['descricao'] . '</span></td>
                         <td><span id="valor" name="valor" value="' . $linha['valor'] . '" class="' . $linha['valor'] . '" brand-text font-weight-light">R$ ' . $linha['valor'] . '</span></td>
-                        <td><span id="qtd" class="qtd">Carrinho</span><br><form action="../../controler/adicionarCarrinho.php" method="post"><input type="hidden" id="' . $linha['id'] . '" name="' . $linha['id'] . '"><input type="submit" value="Adicionar ao Carrinho"></form></td>
+                        <td><form action="../../controler/adicionarCarrinho.php" method="post"><input type=text name=id value="' . $linha['id'] . '" type="hidden"><input type="submit" value="Adicionar ao Carrinho"></form></td>
                 </tr>';
         }
         mysqli_close($con);

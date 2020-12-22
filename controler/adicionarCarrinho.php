@@ -1,4 +1,3 @@
 <?php
-session_start();
-$id = $_POST['id'];
-echo($id);
+echo "<br>O valor de CAMPO 2 é: " . $_POST["id"];
+?>
