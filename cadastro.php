@@ -29,7 +29,6 @@ $erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
                 ?>
                 <input id="senha" name="senha" type="password" class="form-control" placeholder="Senha:" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,254}">
                 <button type="submit" class="btn btn-primary btn-block btn-flat">Cadastrar</button>
-
             </form>
             <a href="index.php" class="text-center">Ja tem uma conta?</a>
     </div>
