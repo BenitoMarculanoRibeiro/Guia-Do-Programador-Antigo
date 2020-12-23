@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -44,8 +47,8 @@
         <!-- FIM DO BOTAO PAGSEGURO -->
     </div>
     <?php
-    session_start();
-    echo $_SESSION['nome'];
+
+    echo ("Usuario " . $_SESSION['nome']);
     ?>
     <div class="lixo">
         <h5 style="font-size: 50px;">

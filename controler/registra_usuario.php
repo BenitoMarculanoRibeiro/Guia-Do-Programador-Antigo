@@ -1,5 +1,5 @@
 <?php
-    require_once('../php/db.class.php');
+    require_once('../db.class.php');
     require_once('../php/usuario/Usuario.class.php');
     $nome = $_POST['nome'];
     $email = $_POST['email'];

@@ -51,7 +51,7 @@ class Usuario
         $resultado_id  = mysqli_query($link, $sql);
         $row_id_usuario = $resultado_id->fetch_array(MYSQLI_ASSOC);
         //echo $row_id_usuario['id_usuario'];
-        if ($row_id_usuario['id_usuario'] === NULL) {
+        if ($row_id_usuario['id'] === NULL) {
             return true;
         } else {
             return false;
