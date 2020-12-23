@@ -31,7 +31,6 @@ $erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
                 <button type="submit" class="btn btn-primary btn-block btn-flat">Cadastrar</button>
 
             </form>
-
             <a href="index.php" class="text-center">Ja tem uma conta?</a>
     </div>
 </body>
