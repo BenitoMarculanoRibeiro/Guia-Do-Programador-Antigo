@@ -20,7 +20,7 @@
            header('Location: /php/index.php');
         }else{
            // header('Location: telaEtiqueta.php');
-            header('Location: ../index.php?erro=1-'.$senha);
+            header('Location: ../index.php?erro=1');
         }
     }else{
         echo "Erro na execução da consulta, favor entrar em contato com o admin do site.<br> Whatssap: 27 995152815";

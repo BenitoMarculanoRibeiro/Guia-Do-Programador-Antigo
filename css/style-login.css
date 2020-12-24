@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body {
+    font-family: 'Raleway';
+}
+
+.arealogin {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.arealogin>input {
+    background-color: black;
+}
+
+.fieldset {
+    margin-top: 100px;
+    color: white;
+    background-color: #111111;
+    max-width: 280px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 5px black;
+}
+
+.text-center {
+    display: block;
+    margin: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway';
+}
+
+.login {
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+input {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin: 9px;
+    width: 250px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 17px;
+    border: none;
+    background-color: #F1F1F1;
+    outline: none;
+    color: #111111;
+    font-family: 'Raleway';
+}
+
+::placeholder {
+    color: #1d1e20;
+    opacity: 70%;
+    text-align: center;
+    font-size: 13px;
+}
+
+button {
+    display: block;
+    border-radius: 0.30em;
+    color: white;
+    text-decoration: none;
+    margin: 25px auto;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 300px;
+    font-family: 'Raleway';
+    padding: 13px;
+    background: none;
+    border: solid 2px white;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    font-size: 15px;
+}
+
+button:hover {
+    color: #111111;
+    background-color: white;
+}
+
+body {
+    background-color: #1d1e20;
+}
