@@ -3,16 +3,151 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia do Programador</title>
-    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <link type="text/css" rel="stylesheet" href="style-index.css">
 </head>
-
 <body>
-    <div id="cabecalho" class="cabecalho">
+    <section class="cabecalho">
+        <div class="logo">
+            <img src="../img/pao.jpg" width="100px" height="50px">
+            <h1>Guia do Programador</h1>
+        </div>
+        <div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Cursos</a></li>
+                    <li><a href="/">Loja</a></li>
+                    <li><a href="/">Doação</a></li>
+                    <li><a href="/">Membros</a></li>
+                    <li><a>Login</a>
+                        <ul>
+                            <li><a href="/">Entrar</a></li>
+                            <li><a href="">Criar Conta</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/">Darkmode(benito)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="noticiarelevante">
+        <h1 class="titulorelevante">Notícias em Destaque</h1>
+        <div class="divsnoticia">
+        <div class="fotoprincipal fotosde fotosde1">
+            <img src="./imgs/Foto3.png">
+            <p>Cachorro Lindo avistando ser o super-man</p>
+        </div>
+        <div class="fotosde">
+            <img src="./imgs/Foto2.jpg">
+            <p>Cachorro Lindo avistando ser o super-man</p>
+        </div>
+        <div class="fotosde">
+            <img src="./imgs/Foto3.png">
+            <p>Cachorro Lindo avistando ser o super-man</p> 
+        </div>
+        <div class="fotosde">
+            <img src="./imgs/Foto2.jpg">
+            <p>Cachorro Lindo avistando ser o super-man</p>
+        </div>
+        <div class="fotosde">
+            <img src="./imgs/Foto2.jpg">
+            <p>Cachorro Lindo avistando ser o super-man</p> 
+        </div>
+        </div>  
+    </section>
+    <section class="noticiasrecentes">
+        <h1>Noticias Recentes</h1>
+        <div class="noticiasdivs">
+            <div class="noticiarec">
+                <img src="./imgs/Foto2.jpg">
+                <p>Cachorro Lindo avistando ser o super-man</p>
+            </div>
+            <div class="noticiarec">
+                <img src="./imgs/Foto2.jpg">
+                <p>Cachorro Lindo avistando ser o super-man</p>
+            </div>
+            <div class="noticiarec">
+                <img src="./imgs/Foto2.jpg">
+                <p>Cachorro Lindo avistando ser o super-man</p>
+            </div>
+            <div class="noticiarec">
+                <img src="./imgs/Foto2.jpg">
+                <p>Cachorro Lindo avistando ser o super-man</p>
+            </div>
+            <div class="noticiarec">
+                <img src="./imgs/Foto2.jpg">
+                <p>Cachorro Lindo avistando ser o super-man</p>
+            </div>
+            <div class="noticiarec">
+                <img src="./imgs/Foto1.jpg">
+                <p>Cachorro Lindo avistando ser o super-man</p>
+            </div>
+            <div class="noticiarec">
+                <img src="./imgs/Foto2.jpg">
+                <p>Cachorro Lindo avistando ser o super-man</p>
+            </div>
+            <div class="noticiarec">
+                <img src="./imgs/Foto2.jpg">
+                <p>Cachorro Lindo avistando ser o super-man</p>
+            </div>
+            <div class="noticiarec">
+                <img src="./imgs/Foto2.jpg">
+                <p>Cachorro Lindo avistando ser o super-man</p>
+            </div >
+            <button class="vermais">Ver Mais</button>
+        </div>
+    </section>
+    <section class="container3">
+        <div class="linguagens">
+            <div class="Item">
+                <p>FrontEnd</p>
+            </div>
+            <div class="Item">
+                <p>BackEnd</p>
+            </div>
+            <div class="item">
+                <p>FullStack</p>
+            </div>
+            <div class="Item">
+                <p>Explore Mais</p>
+            </div>
+        </div>
+        <div class="atividades">
+            <div class="item">
+                <p>Atividades e Desafios</p>
+            </div>
+            <div class="item">
+                <p>Video Aulas</p>
+            </div>
+            <div class="item">
+                <p>Cursos</p>
+            </div>
+            <div class="item">
+                <p>Pratique com OpenSource</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/lucasgsz" target="_blank">Lucasgsz</a></p>
+        <a href="/" target="_blank">Instagram</a>
+        <a href="/" target="_blank">Youtube</a>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <!--<div id="cabecalho" class="cabecalho">
         <table>
             <tr class="home">
                 <form action="../php/index.php" method="post">
@@ -42,9 +177,9 @@ session_start();
         </table>
     </div>
     <div>
-        <!-- INICIO DO BOTAO PAGSEGURO -->
+        
         <a href="https://pag.ae/7WGibpkpp/button" target="_blank" title="Pagar com PagSeguro"><img src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></a>
-        <!-- FIM DO BOTAO PAGSEGURO -->
+        
     </div>
     <?php
 
@@ -71,7 +206,7 @@ session_start();
             Nessa terceira e última parte do nosso objetivo só precisamos centralizar a div interna, mas dessa vez não em relação a página mas em relação a div vermelha que é o elemento pai da div interna. Para isso podemos utilizar as mesmas propriedades que utilizamos
             para centralizar a segunda div. Por tanto, precisamos voltar ao arquivo position.css e no seletor .elementExample-internal adicionar as 4 propriedades que utilizamos pra centralizar a nossa segunda div:
         </h5>
-    </div>
+    </div> -->
 </body>
 
 </html>
