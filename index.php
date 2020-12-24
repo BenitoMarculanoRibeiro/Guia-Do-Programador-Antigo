@@ -7,7 +7,7 @@ $erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Area de Registro</title>
+    <title>Login - Guia Do Programador</title>
     <link rel="sortcut icon" href="fotos_perfil/sad.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
@@ -26,9 +26,9 @@ $erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
                     echo '<font color="#FF0000">Email ou Senha incorreto!</font>';
                 }
                 ?>
-                <button type="submit" class="btn btn-primary btn-block btn-flat">Cadastrar</button>
+                <button type="submit" class="btn btn-primary btn-block btn-flat">Entrar</button>
             </form>
-            <a href="index.php" class="text-center">Ja tem uma conta?</a>
+            <a href="cadastro.php" class="text-center">Ainda não tem uma conta?</a>
         </fieldset>
     </div>
 </body>
