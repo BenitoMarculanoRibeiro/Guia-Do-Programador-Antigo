@@ -3,12 +3,14 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia do Programador</title>
     <link type="text/css" rel="stylesheet" href="style-index.css">
 </head>
+
 <body>
     <section class="cabecalho">
         <div class="logo">
@@ -22,6 +24,7 @@ session_start();
                     <li><a href="/">Cursos</a></li>
                     <li><a href="/">Loja</a></li>
                     <li><a href="/">Doação</a></li>
+                    <li><a href="desafios/desafios.php">Desafios</a></li>
                     <li><a href="/">Membros</a></li>
                     <li><a>Login</a>
                         <ul>
@@ -29,7 +32,7 @@ session_start();
                             <li><a href="">Criar Conta</a></li>
                         </ul>
                     </li>
-                    <li><a href="/">Darkmode(benito)</a></li>
+                    <li><a href="usuario/perfil.php"><?php echo ($_SESSION['nome']); ?></a></li>
                 </ul>
             </nav>
         </div>
@@ -37,67 +40,67 @@ session_start();
     <section class="noticiarelevante">
         <h1 class="titulorelevante">Notícias em Destaque</h1>
         <div class="divsnoticia">
-        <div class="fotoprincipal fotosde fotosde1">
-            <img src="./imgs/Foto3.png">
-            <p>Cachorro Lindo avistando ser o super-man</p>
+            <div class="fotoprincipal fotosde fotosde1">
+                <img src="../img/aviao.jpg">
+                <p>Cachorro Lindo avistando ser o super-man</p>
+            </div>
+            <div class="fotosde">
+                <img src="../img/aviao.jpg">
+                <p>Cachorro Lindo avistando ser o super-man</p>
+            </div>
+            <div class="fotosde">
+                <img src="../img/aviao.jpg">
+                <p>Cachorro Lindo avistando ser o super-man</p>
+            </div>
+            <div class="fotosde">
+                <img src="../img/aviao.jpg">
+                <p>Cachorro Lindo avistando ser o super-man</p>
+            </div>
+            <div class="fotosde">
+                <img src="../img/aviao.jpg">
+                <p>Cachorro Lindo avistando ser o super-man</p>
+            </div>
         </div>
-        <div class="fotosde">
-            <img src="./imgs/Foto2.jpg">
-            <p>Cachorro Lindo avistando ser o super-man</p>
-        </div>
-        <div class="fotosde">
-            <img src="./imgs/Foto3.png">
-            <p>Cachorro Lindo avistando ser o super-man</p> 
-        </div>
-        <div class="fotosde">
-            <img src="./imgs/Foto2.jpg">
-            <p>Cachorro Lindo avistando ser o super-man</p>
-        </div>
-        <div class="fotosde">
-            <img src="./imgs/Foto2.jpg">
-            <p>Cachorro Lindo avistando ser o super-man</p> 
-        </div>
-        </div>  
     </section>
     <section class="noticiasrecentes">
         <h1>Noticias Recentes</h1>
         <div class="noticiasdivs">
             <div class="noticiarec">
-                <img src="./imgs/Foto2.jpg">
+                <img src="../img/aviao.jpg">
                 <p>Cachorro Lindo avistando ser o super-man</p>
             </div>
             <div class="noticiarec">
-                <img src="./imgs/Foto2.jpg">
+                <img src="../img/aviao.jpg">
                 <p>Cachorro Lindo avistando ser o super-man</p>
             </div>
             <div class="noticiarec">
-                <img src="./imgs/Foto2.jpg">
+                <img src="../img/aviao.jpg">
                 <p>Cachorro Lindo avistando ser o super-man</p>
             </div>
             <div class="noticiarec">
-                <img src="./imgs/Foto2.jpg">
+                <img src="../img/aviao.jpg">
                 <p>Cachorro Lindo avistando ser o super-man</p>
             </div>
             <div class="noticiarec">
-                <img src="./imgs/Foto2.jpg">
+                <img src="../img/aviao.jpg">
                 <p>Cachorro Lindo avistando ser o super-man</p>
             </div>
             <div class="noticiarec">
-                <img src="./imgs/Foto1.jpg">
+                <img src="../img/aviao.jpg">
                 <p>Cachorro Lindo avistando ser o super-man</p>
             </div>
             <div class="noticiarec">
-                <img src="./imgs/Foto2.jpg">
+                <img src="../img/aviao.jpg">
                 <p>Cachorro Lindo avistando ser o super-man</p>
             </div>
             <div class="noticiarec">
-                <img src="./imgs/Foto2.jpg">
+                <img src="../img/aviao.jpg">
                 <p>Cachorro Lindo avistando ser o super-man</p>
             </div>
             <div class="noticiarec">
-                <img src="./imgs/Foto2.jpg">
+                <img src="../img/aviao.jpg">
                 <p>Cachorro Lindo avistando ser o super-man</p>
-            </div >
+            </div>
             <button class="vermais">Ver Mais</button>
         </div>
     </section>
@@ -132,20 +135,11 @@ session_start();
         </div>
     </section>
     <footer>
-        <p>Desenvolvido por <a href="https://github.com/lucasgsz" target="_blank">Lucasgsz</a></p>
+        <p>Desenvolvido por <a href="https://github.com/lucasgsz" target="_blank">Lucasgsz </a></p>
+        <p>&nbsp;e <a href="https://github.com/BenitoMarculanoRibeiro" target="_blank">BenitoMarculanoRibeiro</a></p>
         <a href="/" target="_blank">Instagram</a>
         <a href="/" target="_blank">Youtube</a>
     </footer>
-
-
-
-
-
-
-
-
-
-
 
     <!--<div id="cabecalho" class="cabecalho">
         <table>
@@ -181,10 +175,6 @@ session_start();
         <a href="https://pag.ae/7WGibpkpp/button" target="_blank" title="Pagar com PagSeguro"><img src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></a>
         
     </div>
-    <?php
-
-    echo ("Usuario " . $_SESSION['nome']);
-    ?>
     <div class="lixo">
         <h5 style="font-size: 50px;">
             Nessa terceira e última parte do nosso objetivo só precisamos centralizar a div interna, mas dessa vez não em relação a página mas em relação a div vermelha que é o elemento pai da div interna. Para isso podemos utilizar as mesmas propriedades que utilizamos
