@@ -8,10 +8,47 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia do Programador</title>
+<<<<<<< HEAD
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <style>
+        .init {
+            display: block;
+            border-radius: 0.30em;
+            color: white;
+            text-decoration: none;
+            border: none;
+            text-align: center;
+            cursor: pointer;
+            font-weight: 300px;
+            font-family: 'Raleway';
+            padding: 13px;
+            background: none;
+            border: solid 2px white;
+            box-sizing: border-box;
+            transition: all 0.2s;
+            font-size: 15px;
+        }
+
+        .init:hover {
+            color: #111111;
+            background-color: white;
+        }
+    </style>
+=======
     <link type="text/css" rel="stylesheet" href="style-index.css">
+>>>>>>> f683ad3e4cb93ee57d09e2dc1dcd87b18f4e1123
 </head>
 
 <body>
+<<<<<<< HEAD
+    <div style="display: grid; grid-template-columns: auto auto auto auto auto 10%;">
+        <a class="init" href="/">Inicio</a>
+        <a class="init" href="../loja/loja.php">Sobre Nós</a>
+        <a class="init" href="desafios/desafios.php">Desafios</a>
+        <a class="init" href="../loja/loja.php">MyContrib</a>
+        <a class="init" href="loja/loja.php">Loja</a>
+        <a class="init" href="usuario/perfil.php"><?php echo ("Usuario " . $_SESSION['nome']);?></a>
+=======
     <section class="cabecalho">
         <div class="logo">
             <img src="../img/pao.jpg" width="100px" height="50px">
@@ -174,7 +211,14 @@ session_start();
         
         <a href="https://pag.ae/7WGibpkpp/button" target="_blank" title="Pagar com PagSeguro"><img src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></a>
         
+>>>>>>> f683ad3e4cb93ee57d09e2dc1dcd87b18f4e1123
     </div>
+<<<<<<< HEAD
+=======
+    <?php
+    echo ("Usuario " . $_SESSION['nome']);
+    ?>
+>>>>>>> 8ecd471e63061a869d48c4c651284bd160b8a6dd
     <div class="lixo">
         <h5 style="font-size: 50px;">
             Nessa terceira e última parte do nosso objetivo só precisamos centralizar a div interna, mas dessa vez não em relação a página mas em relação a div vermelha que é o elemento pai da div interna. Para isso podemos utilizar as mesmas propriedades que utilizamos
