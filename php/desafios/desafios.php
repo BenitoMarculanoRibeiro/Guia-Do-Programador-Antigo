@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,82 +8,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia do Programador</title>
-    <link type="text/css" rel="stylesheet" href="../../css/style.css">
+    <link type="text/css" rel="stylesheet" href="style-index.css">
 </head>
 
 <body>
-    <div id="cabecalho" class="cabecalho">
-        <table>
-            <tr class="home">
-                <form action="../php/index.php" method="post">
-                    <input class="coluna-20" type="submit" value="Inicio">
-                </form>
-            </tr>
-            <tr class="sobre">
-                <form action="../php/index.php" method="post">
-                    <input class="coluna-20" type="submit" value="Sobre Nós">
-                </form>
-            </tr>
-            <tr class="chalengers">
-                <form action="../php/index.php" method="post">
-                    <input class="coluna-20" type="submit" value="Desafios">
-                </form>
-            </tr>
-            <tr class="myContrib">
-                <form action="../php/index.php" method="post">
-                    <input class="coluna-20" type="submit" value="MyContrib">
-                </form>
-            </tr>
-            <tr class="store">
-                <form action="../php/loja/loja.php" method="post">
-                    <input class="coluna-20" type="submit" value="Loja">
-                </form>
-            </tr>
-        </table>
-    </div>
-    <div class="desafio">
-
-        <table>
-            <td class="desafios" style="padding: 30%;">
+    <section class="cabecalho">
+        <div class="logo">
+            <img src="../../img/pao.jpg" width="100px" height="50px">
+            <h1>Guia do Programador</h1>
+        </div>
+        <div>
+            <nav class="menu">
                 <ul>
-                    <li>
-                        <span>Java</span>
-                        <ul style="padding: 50px;">
-                            <li>
-                                <span>Desafio cacheiro Viajante</span>
-                            </li>
-                            <li>
-                                <span>Desafio Java</span>
-                            </li>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="/">Cursos</a></li>
+                    <li><a href="/">Loja</a></li>
+                    <li><a href="/">Doação</a></li>
+                    <li><a href="/">Desafios</a></li>
+                    <li><a href="/">Membros</a></li>
+                    <li><a>Login</a>
+                        <ul>
+                            <li><a href="/">Entrar</a></li>
+                            <li><a href="">Criar Conta</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <span>Python</span>
-                        <ul style="padding: 50px;">
-                            <li>
-                                <span>Desafio cacheiro Vingante</span>
-                            </li>
-                            <li>
-                                <span>Desafio Reconhecimento de Voz</span>
-                            </li>
-                        </ul>
-                    </li>
+                    <li><a href="/"><?php echo ($_SESSION['nome']); ?></a></li>
                 </ul>
-            </td>
-            <td id="desafio-cacheiro-viagente" style="padding: 70%;">
-                <span>Desafio Cachereiro Viajeante</span>
-                <table>
-                    <td>
-                        Java
-                    </td>
-                    <td>
-                        Algoritmo Genetico
-                    </td>
-                </table>
-                <textarea name="" id="" cols="30" rows="10">Desafio consiste em slikjbehrpinweawófibne´wivhdri</textarea>
-            </td>
-        </table>
+            </nav>
+        </div>
+    </section>
+    <div class="center">
+        <div class="desafios" style="background-color: rebeccapurple;">
+            <a style="float: right; margin-right: 10px;" href="criar-desafios/criar-desafios.php">+Desafio</a>
+            <div class="linguagem"><span>Java</span></div>
+            <div class="desafio"><span>Java</span></div>
+            <div class="linguagem"><span>Python</span></div>
+            <div class="linguagem"><span>JS</span></div>
+            <div class="linguagem"><span>Web</span></div>
+        </div>
+        <div id="desafio-cacheiro-viagente" style="background-color: red;">
+            oi
+        </div>
     </div>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/lucasgsz" target="_blank">Lucasgsz </a></p>
+        <p>&nbsp;e <a href="https://github.com/BenitoMarculanoRibeiro" target="_blank">BenitoMarculanoRibeiro</a></p>
+        <a href="/" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/channel/UCqwHqhXmFBAqDwIBlOUcVVw/featured" target="_blank">Youtube</a>
+    </footer>
 </body>
 
 </html>

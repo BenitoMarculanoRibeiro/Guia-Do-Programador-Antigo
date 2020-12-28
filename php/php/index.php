@@ -24,7 +24,6 @@ session_start();
                     <li><a href="/">Cursos</a></li>
                     <li><a href="/">Loja</a></li>
                     <li><a href="/">Doação</a></li>
-                    <li><a href="desafios/desafios.php">Desafios</a></li>
                     <li><a href="/">Membros</a></li>
                     <li><a>Login</a>
                         <ul>
@@ -32,7 +31,7 @@ session_start();
                             <li><a href="">Criar Conta</a></li>
                         </ul>
                     </li>
-                    <li><a href="usuario/perfil.php"><?php echo ($_SESSION['nome']); ?></a></li>
+                    <li><a href="/">Darkmode(<?php echo ($_SESSION['nome']); ?>)</a></li>
                 </ul>
             </nav>
         </div>
@@ -86,7 +85,7 @@ session_start();
                 <p>Cachorro Lindo avistando ser o super-man</p>
             </div>
             <div class="noticiarec">
-                <img src="../img/aviao.jpg">
+                <img src="../img/aviao.jpgcle">
                 <p>Cachorro Lindo avistando ser o super-man</p>
             </div>
             <div class="noticiarec">
@@ -136,7 +135,7 @@ session_start();
     </section>
     <footer>
         <p>Desenvolvido por <a href="https://github.com/lucasgsz" target="_blank">Lucasgsz </a></p>
-        <p>&nbsp;e <a href="https://github.com/BenitoMarculanoRibeiro" target="_blank">BenitoMarculanoRibeiro</a></p>
+        <p> e <a href="https://github.com/BenitoMarculanoRibeiro" target="_blank">BenitoMarculanoRibeiro</a></p>
         <a href="/" target="_blank">Instagram</a>
         <a href="/" target="_blank">Youtube</a>
     </footer>

@@ -14,7 +14,7 @@
             $_SESSION['id_usuario']=$dados_usuario['id'];
             $_SESSION['nome']=$dados_usuario['nome'];
             $_SESSION['email']=$dados_usuario['email'];
-
+            $_SESSION['cargo']=$dados_usuario['cargo'];
             //unset('nome');
            // header('Location: ../Teste.php');
            header('Location: /php/index.php');
