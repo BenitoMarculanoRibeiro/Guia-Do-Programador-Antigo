@@ -19,7 +19,7 @@ $erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
     <div class="areacadastro">
         <fieldset class="fieldset">
             <p class="registre">Registre-se</p>
-            <form method="POST" action="controler/registra_usuario.php">
+            <form method="POST" action="controler/registra_usuario.php" action="../CHATeado">
                 <input id="nome" name="nome" type="text" class="form-control" placeholder="Nome:" pattern="[A-Za-z]+{4,255}/?[\wà-úÀ-Ú ]*">
                 <input id="email" name="email" type="email" class="form-control" placeholder="E-mail:">
                 <?php
@@ -31,7 +31,6 @@ $erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
                 <button type="submit" class="btn btn-primary btn-block btn-flat">Cadastrar</button>
             </form>
             <a href="index.php" class="text-center">Ja tem uma conta?</a>
-        </fieldset>
     </div>
 </body>
 

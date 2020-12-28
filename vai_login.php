@@ -14,13 +14,13 @@
             $_SESSION['id_usuario']=$dados_usuario['id'];
             $_SESSION['nome']=$dados_usuario['nome'];
             $_SESSION['email']=$dados_usuario['email'];
-            $_SESSION['cargo']=$dados_usuario['cargo'];
+
             //unset('nome');
            // header('Location: ../Teste.php');
            header('Location: /php/index.php');
         }else{
            // header('Location: telaEtiqueta.php');
-            header('Location: ../index.php?erro=1');
+            header('Location: ../index.php?erro=1-'.$senha);
         }
     }else{
         echo "Erro na execução da consulta, favor entrar em contato com o admin do site.<br> Whatssap: 27 995152815";
