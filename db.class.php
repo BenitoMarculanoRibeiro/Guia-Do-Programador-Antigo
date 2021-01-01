@@ -1,9 +1,13 @@
 <?php
     class db {
-        private $host = 'localhost';
+        /*private $host = 'localhost';
         private $usuario = 'id15704737_root';
         private $senha = '#G6zOwAU]1~|>>*!';
-        private $database = 'id15704737_guiadoprogramador';
+        private $database = 'id15704737_guiadoprogramador';*/
+        private $host = 'localhost';
+        private $usuario = 'root';
+        private $senha = '';
+        private $database = 'guia-do-programador';
         public function conecta_mysql(){
             //criar conexao
             $con = mysqli_connect($this->host, $this->usuario, $this->senha, $this->database);

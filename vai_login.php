@@ -17,7 +17,7 @@
 
             //unset('nome');
            // header('Location: ../Teste.php');
-           header('Location: /php/index.php');
+           header('Location: php/index.php');
         }else{
            // header('Location: telaEtiqueta.php');
             header('Location: ../index.php?erro=1-'.$senha);
