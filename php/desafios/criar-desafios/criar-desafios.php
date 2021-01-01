@@ -65,6 +65,7 @@ session_start();
 
                 <button id="fontColor" class="btnColor">F</button>
                 <button id="backColor" class="btnColor">B</button>
+                <button id="backgroundColor" class="btnColor">C</button>
                 <button id="paleta" class="jscolor {valueElement:null, value:'3c8dbc'}"></button>
 
                 <select type="text" id="inputFontSize" onchange="alterFont(this.value)">

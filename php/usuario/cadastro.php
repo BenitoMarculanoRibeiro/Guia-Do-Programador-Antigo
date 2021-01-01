@@ -12,7 +12,7 @@ $erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
     <link rel="sortcut icon" href="fotos_perfil/sad.png" type="image/png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style-cadastro.css">
+    <link rel="stylesheet" href="../../css/style-cadastro.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@ $erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
                 <input id="senha" name="senha" type="password" class="form-control" placeholder="Senha:" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,254}">
                 <button type="submit" class="btn btn-primary btn-block btn-flat">Cadastrar</button>
             </form>
-            <a href="index.php" class="text-center">Ja tem uma conta?</a>
+            <a href="login.php" class="text-center">Ja tem uma conta?</a>
         </fieldset>
     </div>
 </body>
