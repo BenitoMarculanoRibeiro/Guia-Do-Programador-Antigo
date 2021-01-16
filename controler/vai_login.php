@@ -5,7 +5,7 @@ $email = $_POST['email'];
 $senha = md5($_POST['senha']);
 $sql = "SELECT * FROM usuario WHERE email='$email' AND senha='$senha'";
 
-$objDb = new dbb();
+$objDb = new db();
 $link = $objDb->conecta_mysql();
 $resultado_id  = mysqli_query($link, $sql);
 if ($resultado_id) {
