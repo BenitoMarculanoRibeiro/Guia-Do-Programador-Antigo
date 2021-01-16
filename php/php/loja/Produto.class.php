@@ -1,18 +1,6 @@
 <?php
 $erro = isset($_GET['id']) ? $_GET['id'] : 0;
-try {
-    if (!class_exists('db')) {
-        require('../../controler/db.class.php');
-    }
-} catch (\Throwable $th) {
-    try {
-        if (!class_exists('db')) {
-            require('../../controler/db-Benito.class.php');
-        }
-    } catch (\Throwable $th) {
-        echo ('Erro ao conectar aos bancos de dados.');
-    }
-}
+
 class Produto
 {
     public $idproduto;
@@ -35,8 +23,14 @@ class Produto
 
     function salvar()
     {
-        $objDb = new db();
-        $con = $objDb->conecta_mysql();
+        $host = 'localhost';
+        #$usuario = 'root';
+        #$senha = '';
+        #$database = 'guia-do-programador';
+        $usuario = 'id15704737_root';
+        $senha = '#G6zOwAU]1~|>>*!';
+        $database = 'id15704737_guiadoprogramador';
+        $con = mysqli_connect($host, $usuario, $senha, $database);
         $sql = "INSERT INTO `produtos` (`id`, `nome`, `foto`, `descricao`, `valor`) VALUES (NULL, '$this->nome', '$this->foto', '$this->descricao', '$this->valor');";
         if (mysqli_query($con, $sql)) {
             header('Location: ../../index.php');
@@ -47,8 +41,14 @@ class Produto
 
     function retornaFoto($id)
     {
-        $objDb = new db();
-        $con = $objDb->conecta_mysql();
+        $host = 'localhost';
+        #$usuario = 'root';
+        #$senha = '';
+        #$database = 'guia-do-programador';
+        $usuario = 'id15704737_root';
+        $senha = '#G6zOwAU]1~|>>*!';
+        $database = 'id15704737_guiadoprogramador';
+        $con = mysqli_connect($host, $usuario, $senha, $database);
         $sql = "SELECT * FROM `produtos` WHERE `id` LIKE '$id'";
         $resultado  = mysqli_query($con, $sql);
         $row_id = $resultado->fetch_array(MYSQLI_ASSOC);
@@ -58,16 +58,28 @@ class Produto
 
     function updateNome($id, $nome)
     {
-        $objDb = new db();
-        $con = $objDb->conecta_mysql();
+        $host = 'localhost';
+        #$usuario = 'root';
+        #$senha = '';
+        #$database = 'guia-do-programador';
+        $usuario = 'id15704737_root';
+        $senha = '#G6zOwAU]1~|>>*!';
+        $database = 'id15704737_guiadoprogramador';
+        $con = mysqli_connect($host, $usuario, $senha, $database);
         $sql = "UPDATE `produtos` SET `nome` = '$nome' WHERE `produtos`.`id` = '$id'";
         mysqli_query($con, $sql);
     }
 
     function retornaNome($id)
     {
-        $objDb = new db();
-        $con = $objDb->conecta_mysql();
+        $host = 'localhost';
+        #$usuario = 'root';
+        #$senha = '';
+        #$database = 'guia-do-programador';
+        $usuario = 'id15704737_root';
+        $senha = '#G6zOwAU]1~|>>*!';
+        $database = 'id15704737_guiadoprogramador';
+        $con = mysqli_connect($host, $usuario, $senha, $database);
         $sql = "SELECT * FROM `produtos` WHERE `id` LIKE '$id'";
         $resultado  = mysqli_query($con, $sql);
         $row_id = $resultado->fetch_array(MYSQLI_ASSOC);
@@ -77,14 +89,20 @@ class Produto
 
     function criarTabela()
     {
-        $objDb = new db();
-        $con = $objDb->conecta_mysql();
+        $host = 'localhost';
+        #$usuario = 'root';
+        #$senha = '';
+        #$database = 'guia-do-programador';
+        $usuario = 'id15704737_root';
+        $senha = '#G6zOwAU]1~|>>*!';
+        $database = 'id15704737_guiadoprogramador';
+        $con = mysqli_connect($host, $usuario, $senha, $database);
         $sql = mysqli_query($con, "SELECT * FROM `produtos`");
         if ($sql === FALSE) {
             die(mysqli_error($sql));
         }
         while ($linha = mysqli_fetch_assoc($sql)) {
-            echo ($linha['id']);
+            echo($linha['id']);
             echo '
                 <tr>
                     
@@ -101,8 +119,14 @@ class Produto
 
     function criarCarrinho($listP, $listQ)
     {
-        $objDb = new db();
-        $con = $objDb->conecta_mysql();
+        $host = 'localhost';
+        #$usuario = 'root';
+        #$senha = '';
+        #$database = 'guia-do-programador';
+        $usuario = 'id15704737_root';
+        $senha = '#G6zOwAU]1~|>>*!';
+        $database = 'id15704737_guiadoprogramador';
+        $con = mysqli_connect($host, $usuario, $senha, $database);
         $sql = mysqli_query($con, "SELECT * FROM `produtos`");
         if ($sql === FALSE) {
             die(mysqli_error($sql));

@@ -24,7 +24,6 @@ session_start();
                     <li><a href="/">Cursos</a></li>
                     <li><a href="/">Loja</a></li>
                     <li><a href="/">Doação</a></li>
-                    <li><a href="desafios/desafios.php">Desafios</a></li>
                     <li><a href="/">Membros</a></li>
                     <li><a>Login</a>
                         <ul>
@@ -32,7 +31,7 @@ session_start();
                             <li><a href="">Criar Conta</a></li>
                         </ul>
                     </li>
-                    <li><a href="usuario/perfil.php"><?php echo ($_SESSION['nome']); ?></a></li>
+                    <li><a href="/">Darkmode(<?php echo ($_SESSION['nome']); ?>)</a></li>
                 </ul>
             </nav>
         </div>
@@ -86,7 +85,7 @@ session_start();
                 <p>Cachorro Lindo avistando ser o super-man</p>
             </div>
             <div class="noticiarec">
-                <img src="../img/aviao.jpg">
+                <img src="../img/aviao.jpgcle">
                 <p>Cachorro Lindo avistando ser o super-man</p>
             </div>
             <div class="noticiarec">
@@ -136,7 +135,7 @@ session_start();
     </section>
     <footer>
         <p>Desenvolvido por <a href="https://github.com/lucasgsz" target="_blank">Lucasgsz </a></p>
-        <p>&nbsp;e <a href="https://github.com/BenitoMarculanoRibeiro" target="_blank">BenitoMarculanoRibeiro</a></p>
+        <p> e <a href="https://github.com/BenitoMarculanoRibeiro" target="_blank">BenitoMarculanoRibeiro</a></p>
         <a href="/" target="_blank">Instagram</a>
         <a href="/" target="_blank">Youtube</a>
     </footer>
@@ -175,12 +174,6 @@ session_start();
         <a href="https://pag.ae/7WGibpkpp/button" target="_blank" title="Pagar com PagSeguro"><img src="//assets.pagseguro.com.br/ps-integration-assets/botoes/pagamentos/205x30-pagar.gif" alt="Pague com PagSeguro - é rápido, grátis e seguro!" /></a>
         
     </div>
-<<<<<<< HEAD
-=======
-    <?php
-    echo ("Usuario " . $_SESSION['nome']);
-    ?>
->>>>>>> 8ecd471e63061a869d48c4c651284bd160b8a6dd
     <div class="lixo">
         <h5 style="font-size: 50px;">
             Nessa terceira e última parte do nosso objetivo só precisamos centralizar a div interna, mas dessa vez não em relação a página mas em relação a div vermelha que é o elemento pai da div interna. Para isso podemos utilizar as mesmas propriedades que utilizamos

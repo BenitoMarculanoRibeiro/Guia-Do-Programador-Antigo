@@ -11,6 +11,10 @@
     background-color: #1d1e20;
 }
 
+#editor {
+    height: 93%;
+}
+
 .btnColor {
     font-size: 15px;
     font-weight: bold;

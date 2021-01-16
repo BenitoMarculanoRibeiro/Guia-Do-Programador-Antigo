@@ -58,6 +58,7 @@ body {
 .center {
     display: grid;
     grid-template-columns: 48% auto 48%;
+    grid-template-rows: 690px;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -66,19 +67,11 @@ body {
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 3px;
-    height: 98%;
+    padding-bottom: 2px;
 }
 
 #desafio {
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-#titulo {
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    height: 93%;
 }
 
 
@@ -251,7 +244,7 @@ body {
 }
 
 .noticiasrecentes button:hover {
-    width: 100%;
+    width: 101%;
     padding: 6px;
 }
 
@@ -299,7 +292,7 @@ body {
 }
 
 footer {
-    margin-top: 10px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     padding-right: 10px;
