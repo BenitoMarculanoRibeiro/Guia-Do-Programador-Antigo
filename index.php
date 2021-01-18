@@ -1,10 +1,10 @@
 <?php
 session_start();
-if (!isset($_SESSION["id"]) || !isset($_SESSION["nome"])) {
-    // Usuário não logado! Redireciona para a página de login
+if (!isset($_SESSION["email"])) {
     header("Location: php/usuario/login.php");
-    exit;
 }
+require_once('php/usuario/Usuario.class.php');
+$erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

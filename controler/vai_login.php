@@ -1,11 +1,11 @@
 <?php
 session_start();
-require_once('db.class.php');
+require_once('db-Benito.class.php');
 $email = $_POST['email'];
 $senha = md5($_POST['senha']);
 $sql = "SELECT * FROM usuario WHERE email='$email' AND senha='$senha'";
 
-$objDb = new dbb();
+$objDb = new db();
 $link = $objDb->conecta_mysql();
 $resultado_id  = mysqli_query($link, $sql);
 if ($resultado_id) {
@@ -15,11 +15,8 @@ if ($resultado_id) {
         $_SESSION['nome'] = $dados_usuario['nome'];
         $_SESSION['email'] = $dados_usuario['email'];
         $_SESSION['cargo'] = $dados_usuario['cargo'];
-        //unset('nome');
-        // header('Location: ../Teste.php');
         header('Location: ../index.php');
     } else {
-        // header('Location: telaEtiqueta.php');
         header('Location: ../index.php?erro=1');
     }
 } else {

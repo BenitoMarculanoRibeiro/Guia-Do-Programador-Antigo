@@ -1,7 +1,7 @@
 <?php
 $erro = isset($_GET['id']) ? $_GET['id'] : 0;
 if (!class_exists('db')) {
-    require('../../db.class.php');
+    require('../../Projetos/Guia-Do-Programador/controler/db-Benito.class.php');
 }
 
 class Usuario

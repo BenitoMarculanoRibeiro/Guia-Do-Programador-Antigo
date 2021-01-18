@@ -1,5 +1,5 @@
 <?php
-class dbb
+class db
 {
     private $host = 'localhost';
     private $usuario = 'root';
